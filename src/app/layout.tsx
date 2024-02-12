@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const noto_Sans = Noto_Sans({
+   subsets: ["latin"],
+    weight: ['400', '500', '600']
+ });
 
 export const metadata: Metadata = {
-  title: "João Paulo",
+  title: "João Paulo ",
   description: "João Paulo desenvolvedor fullstack ...",
 };
 
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={noto_Sans.className}>{children}</body>
     </html>
   );
 }
