@@ -1,6 +1,7 @@
 .container {
     padding: 40px 32px;
     display: grid;
+    justify-items: center;
     gap: 24px;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
@@ -9,6 +10,39 @@
     "experience"
     "info";
 
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        grid-area: btns;
+        width: 100%;
+        text-decoration: none;
+
+        .btn-primary {
+            background: linear-gradient(to bottom, #336699 0%, #669999 100%);       
+            border-radius: 24px;
+            width: 325px;
+            padding: 12px;
+            text-align: center;
+    
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+            border: none;
+    
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+        
+    }
+    
+    
 }
 
 @media (min-width: 768px){
