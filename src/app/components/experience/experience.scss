@@ -4,9 +4,71 @@
     align-items: center;
     max-width: 500px;
 
-    gap: 24px;
-    
+    gap: 24px;    
     grid-area: experience;
+
+    .experience-time{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .experience-language{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        img {
+            filter: grayscale(100%);
+        }
+    
+        .experience-unit{
+            width: 300px;
+            height: 30px;
+            border-radius: 24px;
+            border: 1px solid var(--text-secondary);
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .experience-measure{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 999;
+
+                border-radius: 24px;
+                height: 30px;
+                border: 1px solid linear-gradient(to bottom, #336699 0%, #669999 100%);
+                background: linear-gradient(to bottom, #336699 0%, #669999 100%);
+
+                color: var(--text-primary);
+                font-weight: 300;
+                text-align: center;
+                
+    
+    
+    
+                &.measure-1{
+                    width: 33%;
+                }
+                &.measure-2{
+                    width: 66%;
+                }
+                &.measure-3{
+                    width: 100%;
+                }
+    
+            }
+        }
+
+        
+    }
+    
 
     p{
         font-weight: 300;

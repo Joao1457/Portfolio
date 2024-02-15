@@ -4,7 +4,7 @@ import "./information.scss"
 export function Info(){
     return(
         <div className="infos">
-        <SectionTitle text="Linguagens"/>
+        <SectionTitle text="Idiomas"/>
             <div className="languages-info">
                 <span>🇺🇸 EN - Básico</span>
                 <span>🇧🇷 PT-BR - Falante nátivo</span>
