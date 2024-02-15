@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { SectionTitle } from "../sectionTitle.tsx/section-title"
 import "./information.scss"
 
