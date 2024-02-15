@@ -11,8 +11,8 @@ export function SocialBtns(props : SocialBtnsProps){
     return(
         <div className="social">
            <a href=""><InstaIcon/></a>
-            <a href=""><GitIcon/></a>
-            <a href=""><LinkedinIcon/></a>            
+            <a href="https://github.com/Joao1457"><GitIcon/></a>
+            <a href="https://www.linkedin.com/in/joao-paulo-marques-da-silva-b7656418b/"><LinkedinIcon/></a>            
         </div>
     )
 }
